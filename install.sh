@@ -45,7 +45,7 @@ log_info "Installing additional packages..."
 sudo pacman -S --needed base-devel git zsh zoxide fzf
 
 # Ask User to install Hyprland
-read -p "Do you want to install Hyprland? (y/n) " -n 1 -r
+read -p "Do you want to install Hyprland? (Y/n) " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Nn]$ ]]; then
     log_info "Skipping Hyprland installation"
