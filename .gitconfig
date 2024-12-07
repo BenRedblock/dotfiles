@@ -1,0 +1,9 @@
+[credential]
+	helper = cache --timeout 99999999
+[user]
+	email = figr@gmx.de
+	name = BenRedblock
+[credentialCache]
+  ignoreSIGHUP = on
+[alias]
+  ac = commit -am
