@@ -75,8 +75,6 @@ alias c='clear'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-# Deno
-. "/home/finn/.deno/env"
 
 # Spicetify
 export PATH=$PATH:/home/finn/.spicetify
