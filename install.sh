@@ -37,7 +37,7 @@ sudo pacman -S stow
 
 # Install dotfiles
 log_info "Installing dotfiles..."
-stow -t "$HOME" -d "$DOTFILES_DIR" stow
+stow "$DOTFILES_DIR"
 
 # Install additional packages
 log_info "Installing additional packages..."
