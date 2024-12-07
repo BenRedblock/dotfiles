@@ -37,7 +37,8 @@ sudo pacman -S stow
 
 # Install dotfiles
 log_info "Installing dotfiles..."
-stow "$DOTFILES_DIR"
+cd "$DOTFILES_DIR"
+stow .
 
 # Install additional packages
 log_info "Installing additional packages..."
