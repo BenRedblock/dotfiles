@@ -7,3 +7,5 @@
   ignoreSIGHUP = on
 [alias]
   ac = commit -am
+[pull]
+  rebase = false

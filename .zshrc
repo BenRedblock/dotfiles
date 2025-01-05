@@ -70,6 +70,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls -lah --color'
 alias c='clear'
+alias lg="lazygit"
 
 # Shell integrations
 eval "$(fzf --zsh)"
