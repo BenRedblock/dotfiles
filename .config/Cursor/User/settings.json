@@ -1,0 +1,24 @@
+{
+    "window.commandCenter": 1,
+    "git.autofetch": true,
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "cursor.chat.alwaysSearchWeb": true,
+    "cursor.cpp.enablePartialAccepts": true,
+    "terminal.integrated.env.linux": {},
+    "console-ninja.featureSet": "Community",
+    "workbench.sideBar.location": "right",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vscord.app.privacyMode.enable": true,
+    "vscord.status.idle.check": false,
+    "editor.fontFamily": "CaskaydiaCove Nerd Font Mono",
+    "editor.formatOnSave": true
+}
