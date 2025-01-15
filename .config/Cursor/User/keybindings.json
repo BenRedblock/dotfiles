@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "ctrl+[Backslash]",
+        "key": "ctrl+shift+7",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -36,16 +36,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+[Semicolon]",
-        "command": "workbench.action.chat.newChat",
-        "when": "chatIsEnabled && inChat"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "-workbench.action.chat.newChat",
-        "when": "chatIsEnabled && inChat"
-    },
-    {
         "key": "ctrl+[Quote]",
         "command": "aichat.newfollowupaction"
     },
@@ -62,5 +52,25 @@
         "key": "ctrl+y",
         "command": "-editor.action.inlineDiffs.acceptPartialEdit",
         "when": "editorTextFocus && (arbitrary function)"
+    },
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "composer.createNew",
+        "when": "focusedView == 'workbench.panel.composerViewPane2.view'"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-composer.createNew",
+        "when": "focusedView == 'workbench.panel.composerViewPane2.view'"
+    },
+    {
+        "key": "ctrl+shift+7",
+        "command": "-editor.action.accessibleViewAcceptInlineCompletion",
+        "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+    },
+    {
+        "key": "ctrl+shift+7",
+        "command": "-notebook.commentSelectedCells",
+        "when": "notebookEditable && notebookEditorFocused && !inputFocus"
     }
 ]
