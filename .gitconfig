@@ -1,11 +1,22 @@
+[core]
+  editor = nvim
+
 [credential]
-	helper = cache --timeout 99999999
+  helper = cache --timeout 99999999
+
 [user]
 	email = figr@gmx.de
-	name = BenRedblock
+  name = BenRedblock
+
 [credentialCache]
   ignoreSIGHUP = on
+
 [alias]
   ac = commit -am
+
 [pull]
   rebase = false
+
+[push]
+  autoSetupRemote = true
+  default = current
