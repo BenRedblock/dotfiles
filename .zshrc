@@ -75,7 +75,7 @@ alias lg="lazygit"
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
+eval "$(fnm env --use-on-cd --shell zsh)" # fnm completions
 
 # Spicetify
 export PATH=$PATH:/home/finn/.spicetify
