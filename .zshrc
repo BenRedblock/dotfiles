@@ -83,6 +83,9 @@ eval "$(zoxide init --cmd cd zsh)"
 # Spicetify
 export PATH=$PATH:/home/finn/.spicetify
 
+# fnm
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 # bun completions
 [ -s "/home/finn/.bun/_bun" ] && source "/home/finn/.bun/_bun"
 
