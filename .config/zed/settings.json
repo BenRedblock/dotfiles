@@ -7,11 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_edit_predictions": true,
   "icon_theme": "Catppuccin Mocha",
   "assistant": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-7-sonnet"
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
     },
     "version": "2"
   },
@@ -30,9 +31,10 @@
     "light": "One Light",
     "dark": "Catppuccin Mocha - No Italics"
   },
-  "format_on_save": "prettier",
+  "format_on_save": "on",
   "tabs": {
     "file_icons": true,
     "show_diagnostics": "all"
-  }
+  },
+  "formatter": "auto"
 }

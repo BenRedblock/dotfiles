@@ -4,3 +4,5 @@
 scripts
 install.sh
 .config/nvim/lazy-lock.json
+sources/*
+install-dotfiles.sh
