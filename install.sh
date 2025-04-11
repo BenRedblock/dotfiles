@@ -3,59 +3,64 @@
 # Exit on error
 set -e
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
 
-# Dotfiles directory
-DOTFILES_DIR="$HOME/dotfiles"
+source ./sources/utils.sh
 
-# Log helper functions
-log_info() {
-    echo -e "${BLUE}INFO: ${NC}$1"
-}
 
-log_success() {
-    echo -e "${GREEN}SUCCESS: ${NC}$1"
-}
+if [ ! -f "sources/packages.conf" ]; then
+    log_error "sources/packages.conf not found"
+fi
 
-log_error() {
-    echo -e "${RED}ERROR: ${NC}$1"
+source ./sources/packages.conf
+
+log_info "Starting system setup..."
+
+log_info "Checking for chaotic-aur repository..."
+# Add chaotic-aur repository if not already installed
+if grep -q chaotic-aur /etc/pacman.conf; then
+    log_info "chaotic-aur repository is already installed."
+else
     exit 1
-}
+    log_info "Adding chaotic-aur repository..."
+    sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+    sudo pacman-key --lsign-key 3056513887B78AEB
+    sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm
+    sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
+    sudo bash -c 'echo "[chaotic-aur]
+Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf'
 
-# Check if dotfiles directory exists
-if [ ! -d "$DOTFILES_DIR" ]; then
-    log_error "Dotfiles directory not found at $DOTFILES_DIR"
+    log_success "Added chaotic-aur repository."
 fi
 
-# Install stow
-log_info "Installing stow..."
-sudo pacman -S stow
+# Update system packages
+log_info "Updating system packages..."
+sudo pacman -Syu --noconfirm
 
-# Install dotfiles
-log_info "Installing dotfiles..."
-cd "$DOTFILES_DIR"
-stow .
+log_success "System packages updated successfully."
 
-# Install additional packages
-log_info "Installing additional packages..."
-sudo pacman -S --needed base-devel git zsh zoxide fzf
+log_info "Installing yay..."
+sudo pacman -S yay --noconfirm
 
-# Ask User to install Hyprland
-read -p "Do you want to install Hyprland? (Y/n) " -n 1 -r
-echo
-if [[ $REPLY =~ ^[Nn]$ ]]; then
-    log_info "Skipping Hyprland installation"
-    exit 0
+log_info "Installing system utilities..."
+install_packages "${SYSTEMUTILS[@]}"
+
+log_info "Installing development tools..."
+install_packages "${DEV_TOOLS[@]}"
+
+log_info "Installing system maintenance tools..."
+install_packages "${MAINTENANCE[@]}"
+
+log_info "Installing media packages..."
+install_packages "${MEDIA[@]}"
+
+log_success "System setup completed successfully!"
+
+read -p "Do you want to install dotfiles? [y/N]: " choice
+if [[ $choice == "y" ]]; then
+    ./install-dotfiles.sh
 fi
 
-# Install Hyprland
-log_info "Installing Hyprland..."
-sudo pacman -S --needed hyprland
-
-# Install Hyprland dependencies
-log_info "Installing Hyprland dependencies..."
-sudo pacman -S --needed waybar rofi
+read -p "Do you want to benchmark and add the best mirrors? [Y/n]: " choice
+if [[ $choice != "n" ]]; then
+    rate-mirrors arch
+fi

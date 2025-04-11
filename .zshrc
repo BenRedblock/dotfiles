@@ -78,7 +78,7 @@ alias lg="lazygit"
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
+eval "$(fnm env --use-on-cd --shell zsh)" # fnm completions
 
 # Spicetify
 export PATH=$PATH:/home/finn/.spicetify
@@ -92,3 +92,11 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/finn/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
