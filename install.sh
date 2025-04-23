@@ -53,7 +53,6 @@ install_packages "${MAINTENANCE[@]}"
 log_info "Installing media packages..."
 install_packages "${MEDIA[@]}"
 
-log_success "System setup completed successfully!"
 
 read -p "Do you want to install dotfiles? [y/N]: " choice
 if [[ $choice == "y" ]]; then
@@ -64,3 +63,7 @@ read -p "Do you want to benchmark and add the best mirrors? [Y/n]: " choice
 if [[ $choice != "n" ]]; then
     rate-mirrors arch
 fi
+
+log_success "Mirrors benchmarked and added successfully."
+
+log_success "System setup completed successfully!"
