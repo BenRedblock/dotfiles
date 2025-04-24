@@ -7,6 +7,14 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_assistant": false
+  },
   "show_edit_predictions": true,
   "icon_theme": "Catppuccin Mocha",
   "assistant": {
@@ -36,5 +44,5 @@
     "file_icons": true,
     "show_diagnostics": "all"
   },
-  "formatter": "auto"
+  "formatter": "auto",
 }

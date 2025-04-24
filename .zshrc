@@ -83,16 +83,12 @@ eval "$(fnm env --use-on-cd --shell zsh)" # fnm completions
 # Spicetify
 export PATH=$PATH:/home/finn/.spicetify
 
-# fnm
-eval "$(fnm env --use-on-cd --shell zsh)"
-
 # bun completions
 [ -s "/home/finn/.bun/_bun" ] && source "/home/finn/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
 # pnpm
 export PNPM_HOME="/home/finn/.local/share/pnpm"
 case ":$PATH:" in
