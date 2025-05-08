@@ -107,6 +107,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 # pyenv end
 #
-# jdkman
+# sdkman
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-# jdk end
+# sdkman end
