@@ -1,3 +1,7 @@
+#env
+TERM=xterm-256color
+
+
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/home/finn/.zsh/completions:"* ]]; then export FPATH="/home/finn/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -102,3 +106,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 # pyenv end
+#
+# jdkman
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+# jdk end
