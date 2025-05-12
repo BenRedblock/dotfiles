@@ -19,8 +19,8 @@
   "icon_theme": "Catppuccin Mocha",
   "assistant": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-5-sonnet"
+      "provider": "google",
+      "model": "gemini-2.0-flash"
     },
     "version": "2"
   },
