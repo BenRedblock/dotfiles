@@ -2,17 +2,13 @@
 
 * {
     font-size: 15px;
-    font-family: "CodeNewRoman Nerd Font Propo";
+    font-family: "CaskaydiaCove Nerd Font Mono";
 }
 window#waybar {
     all: unset;
 }
+/* See leftitems */
 .modules-left {
-    padding: 7px;
-    margin: 10 0 5 10;
-    border-radius: 10px;
-    background: alpha(@background, 0.6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
 }
 .modules-center {
     padding: 7px;
@@ -32,6 +28,27 @@ tooltip {
     background: @background;
     color: @color7;
 }
+#leftitems {
+    padding: 7px;
+    margin: 10 0 0 10;
+    border-radius: 10px;
+    background: alpha(@background, 0.6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+#media {
+    padding: 7px;
+    margin: 10 0 0 10;
+    border-radius: 10px;
+    background: alpha(@background, 0.6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+}
+#custom-mediaplayer {
+    font-size: 16px;
+    border-radius: 2%;
+    background: alpha(@background, 0.6);
+}
+@import "./waybar-mediaplayer/src/style.css";
+
 #clock:hover,
 #custom-pacman:hover,
 #custom-notification:hover,
@@ -69,7 +86,7 @@ tooltip {
     transition: all 0.2s ease;
 }
 #workspaces button:hover {
-    color: rgba(0, 0, 0, 0);
+    color: @color2;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
     transition: all 1s ease;
@@ -85,7 +102,7 @@ tooltip {
     text-shadow: 0px 0px 1.5px rgba(255, 255, 255, 0.5);
 }
 #workspaces button.empty:hover {
-    color: rgba(0, 0, 0, 0);
+    color: @color3;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
     transition: all 1s ease;

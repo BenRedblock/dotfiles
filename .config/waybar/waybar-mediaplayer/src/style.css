@@ -1,0 +1,305 @@
+@import url("/home/finn/.cache/wal/colors-waybar.css");
+
+#custom-mediaplayer.perc0-0 {
+    background-image: linear-gradient(to right, @color1 0%, gray 0.1%);
+}
+#custom-mediaplayer.perc1-0 {
+    background-image: linear-gradient(to right, @color1 1%, gray 1.1%);
+}
+#custom-mediaplayer.perc2-0 {
+    background-image: linear-gradient(to right, @color1 2%, gray 2.1%);
+}
+#custom-mediaplayer.perc3-0 {
+    background-image: linear-gradient(to right, @color1 3%, gray 3.1%);
+}
+#custom-mediaplayer.perc4-0 {
+    background-image: linear-gradient(to right, @color1 4%, gray 4.1%);
+}
+#custom-mediaplayer.perc5-0 {
+    background-image: linear-gradient(to right, @color1 5%, gray 5.1%);
+}
+#custom-mediaplayer.perc6-0 {
+    background-image: linear-gradient(to right, @color1 6%, gray 6.1%);
+}
+#custom-mediaplayer.perc7-0 {
+    background-image: linear-gradient(to right, @color1 7%, gray 7.1%);
+}
+#custom-mediaplayer.perc8-0 {
+    background-image: linear-gradient(to right, @color1 8%, gray 8.1%);
+}
+#custom-mediaplayer.perc9-0 {
+    background-image: linear-gradient(to right, @color1 9%, gray 9.1%);
+}
+#custom-mediaplayer.perc10-0 {
+    background-image: linear-gradient(to right, @color1 10%, gray 10.1%);
+}
+#custom-mediaplayer.perc11-0 {
+    background-image: linear-gradient(to right, @color1 11%, gray 11.1%);
+}
+#custom-mediaplayer.perc12-0 {
+    background-image: linear-gradient(to right, @color1 12%, gray 12.1%);
+}
+#custom-mediaplayer.perc13-0 {
+    background-image: linear-gradient(to right, @color1 13%, gray 13.1%);
+}
+#custom-mediaplayer.perc14-0 {
+    background-image: linear-gradient(to right, @color1 14%, gray 14.1%);
+}
+#custom-mediaplayer.perc15-0 {
+    background-image: linear-gradient(to right, @color1 15%, gray 15.1%);
+}
+#custom-mediaplayer.perc16-0 {
+    background-image: linear-gradient(to right, @color1 16%, gray 16.1%);
+}
+#custom-mediaplayer.perc17-0 {
+    background-image: linear-gradient(to right, @color1 17%, gray 17.1%);
+}
+#custom-mediaplayer.perc18-0 {
+    background-image: linear-gradient(to right, @color1 18%, gray 18.1%);
+}
+#custom-mediaplayer.perc19-0 {
+    background-image: linear-gradient(to right, @color1 19%, gray 19.1%);
+}
+#custom-mediaplayer.perc20-0 {
+    background-image: linear-gradient(to right, @color1 20%, gray 20.1%);
+}
+#custom-mediaplayer.perc21-0 {
+    background-image: linear-gradient(to right, @color1 21%, gray 21.1%);
+}
+#custom-mediaplayer.perc22-0 {
+    background-image: linear-gradient(to right, @color1 22%, gray 22.1%);
+}
+#custom-mediaplayer.perc23-0 {
+    background-image: linear-gradient(to right, @color1 23%, gray 23.1%);
+}
+#custom-mediaplayer.perc24-0 {
+    background-image: linear-gradient(to right, @color1 24%, gray 24.1%);
+}
+#custom-mediaplayer.perc25-0 {
+    background-image: linear-gradient(to right, @color1 25%, gray 25.1%);
+}
+#custom-mediaplayer.perc26-0 {
+    background-image: linear-gradient(to right, @color1 26%, gray 26.1%);
+}
+#custom-mediaplayer.perc27-0 {
+    background-image: linear-gradient(to right, @color1 27%, gray 27.1%);
+}
+#custom-mediaplayer.perc28-0 {
+    background-image: linear-gradient(to right, @color1 28%, gray 28.1%);
+}
+#custom-mediaplayer.perc29-0 {
+    background-image: linear-gradient(to right, @color1 29%, gray 29.1%);
+}
+#custom-mediaplayer.perc30-0 {
+    background-image: linear-gradient(to right, @color1 30%, gray 30.1%);
+}
+#custom-mediaplayer.perc31-0 {
+    background-image: linear-gradient(to right, @color1 31%, gray 31.1%);
+}
+#custom-mediaplayer.perc32-0 {
+    background-image: linear-gradient(to right, @color1 32%, gray 32.1%);
+}
+#custom-mediaplayer.perc33-0 {
+    background-image: linear-gradient(to right, @color1 33%, gray 33.1%);
+}
+#custom-mediaplayer.perc34-0 {
+    background-image: linear-gradient(to right, @color1 34%, gray 34.1%);
+}
+#custom-mediaplayer.perc35-0 {
+    background-image: linear-gradient(to right, @color1 35%, gray 35.1%);
+}
+#custom-mediaplayer.perc36-0 {
+    background-image: linear-gradient(to right, @color1 36%, gray 36.1%);
+}
+#custom-mediaplayer.perc37-0 {
+    background-image: linear-gradient(to right, @color1 37%, gray 37.1%);
+}
+#custom-mediaplayer.perc38-0 {
+    background-image: linear-gradient(to right, @color1 38%, gray 38.1%);
+}
+#custom-mediaplayer.perc39-0 {
+    background-image: linear-gradient(to right, @color1 39%, gray 39.1%);
+}
+#custom-mediaplayer.perc40-0 {
+    background-image: linear-gradient(to right, @color1 40%, gray 40.1%);
+}
+#custom-mediaplayer.perc41-0 {
+    background-image: linear-gradient(to right, @color1 41%, gray 41.1%);
+}
+#custom-mediaplayer.perc42-0 {
+    background-image: linear-gradient(to right, @color1 42%, gray 42.1%);
+}
+#custom-mediaplayer.perc43-0 {
+    background-image: linear-gradient(to right, @color1 43%, gray 43.1%);
+}
+#custom-mediaplayer.perc44-0 {
+    background-image: linear-gradient(to right, @color1 44%, gray 44.1%);
+}
+#custom-mediaplayer.perc45-0 {
+    background-image: linear-gradient(to right, @color1 45%, gray 45.1%);
+}
+#custom-mediaplayer.perc46-0 {
+    background-image: linear-gradient(to right, @color1 46%, gray 46.1%);
+}
+#custom-mediaplayer.perc47-0 {
+    background-image: linear-gradient(to right, @color1 47%, gray 47.1%);
+}
+#custom-mediaplayer.perc48-0 {
+    background-image: linear-gradient(to right, @color1 48%, gray 48.1%);
+}
+#custom-mediaplayer.perc49-0 {
+    background-image: linear-gradient(to right, @color1 49%, gray 49.1%);
+}
+#custom-mediaplayer.perc50-0 {
+    background-image: linear-gradient(to right, @color1 50%, gray 50.1%);
+}
+#custom-mediaplayer.perc51-0 {
+    background-image: linear-gradient(to right, @color1 51%, gray 51.1%);
+}
+#custom-mediaplayer.perc52-0 {
+    background-image: linear-gradient(to right, @color1 52%, gray 52.1%);
+}
+#custom-mediaplayer.perc53-0 {
+    background-image: linear-gradient(to right, @color1 53%, gray 53.1%);
+}
+#custom-mediaplayer.perc54-0 {
+    background-image: linear-gradient(to right, @color1 54%, gray 54.1%);
+}
+#custom-mediaplayer.perc55-0 {
+    background-image: linear-gradient(to right, @color1 55%, gray 55.1%);
+}
+#custom-mediaplayer.perc56-0 {
+    background-image: linear-gradient(to right, @color1 56%, gray 56.1%);
+}
+#custom-mediaplayer.perc57-0 {
+    background-image: linear-gradient(to right, @color1 57%, gray 57.1%);
+}
+#custom-mediaplayer.perc58-0 {
+    background-image: linear-gradient(to right, @color1 58%, gray 58.1%);
+}
+#custom-mediaplayer.perc59-0 {
+    background-image: linear-gradient(to right, @color1 59%, gray 59.1%);
+}
+#custom-mediaplayer.perc60-0 {
+    background-image: linear-gradient(to right, @color1 60%, gray 60.1%);
+}
+#custom-mediaplayer.perc61-0 {
+    background-image: linear-gradient(to right, @color1 61%, gray 61.1%);
+}
+#custom-mediaplayer.perc62-0 {
+    background-image: linear-gradient(to right, @color1 62%, gray 62.1%);
+}
+#custom-mediaplayer.perc63-0 {
+    background-image: linear-gradient(to right, @color1 63%, gray 63.1%);
+}
+#custom-mediaplayer.perc64-0 {
+    background-image: linear-gradient(to right, @color1 64%, gray 64.1%);
+}
+#custom-mediaplayer.perc65-0 {
+    background-image: linear-gradient(to right, @color1 65%, gray 65.1%);
+}
+#custom-mediaplayer.perc66-0 {
+    background-image: linear-gradient(to right, @color1 66%, gray 66.1%);
+}
+#custom-mediaplayer.perc67-0 {
+    background-image: linear-gradient(to right, @color1 67%, gray 67.1%);
+}
+#custom-mediaplayer.perc68-0 {
+    background-image: linear-gradient(to right, @color1 68%, gray 68.1%);
+}
+#custom-mediaplayer.perc69-0 {
+    background-image: linear-gradient(to right, @color1 69%, gray 69.1%);
+}
+#custom-mediaplayer.perc70-0 {
+    background-image: linear-gradient(to right, @color1 70%, gray 70.1%);
+}
+#custom-mediaplayer.perc71-0 {
+    background-image: linear-gradient(to right, @color1 71%, gray 71.1%);
+}
+#custom-mediaplayer.perc72-0 {
+    background-image: linear-gradient(to right, @color1 72%, gray 72.1%);
+}
+#custom-mediaplayer.perc73-0 {
+    background-image: linear-gradient(to right, @color1 73%, gray 73.1%);
+}
+#custom-mediaplayer.perc74-0 {
+    background-image: linear-gradient(to right, @color1 74%, gray 74.1%);
+}
+#custom-mediaplayer.perc75-0 {
+    background-image: linear-gradient(to right, @color1 75%, gray 75.1%);
+}
+#custom-mediaplayer.perc76-0 {
+    background-image: linear-gradient(to right, @color1 76%, gray 76.1%);
+}
+#custom-mediaplayer.perc77-0 {
+    background-image: linear-gradient(to right, @color1 77%, gray 77.1%);
+}
+#custom-mediaplayer.perc78-0 {
+    background-image: linear-gradient(to right, @color1 78%, gray 78.1%);
+}
+#custom-mediaplayer.perc79-0 {
+    background-image: linear-gradient(to right, @color1 79%, gray 79.1%);
+}
+#custom-mediaplayer.perc80-0 {
+    background-image: linear-gradient(to right, @color1 80%, gray 80.1%);
+}
+#custom-mediaplayer.perc81-0 {
+    background-image: linear-gradient(to right, @color1 81%, gray 81.1%);
+}
+#custom-mediaplayer.perc82-0 {
+    background-image: linear-gradient(to right, @color1 82%, gray 82.1%);
+}
+#custom-mediaplayer.perc83-0 {
+    background-image: linear-gradient(to right, @color1 83%, gray 83.1%);
+}
+#custom-mediaplayer.perc84-0 {
+    background-image: linear-gradient(to right, @color1 84%, gray 84.1%);
+}
+#custom-mediaplayer.perc85-0 {
+    background-image: linear-gradient(to right, @color1 85%, gray 85.1%);
+}
+#custom-mediaplayer.perc86-0 {
+    background-image: linear-gradient(to right, @color1 86%, gray 86.1%);
+}
+#custom-mediaplayer.perc87-0 {
+    background-image: linear-gradient(to right, @color1 87%, gray 87.1%);
+}
+#custom-mediaplayer.perc88-0 {
+    background-image: linear-gradient(to right, @color1 88%, gray 88.1%);
+}
+#custom-mediaplayer.perc89-0 {
+    background-image: linear-gradient(to right, @color1 89%, gray 89.1%);
+}
+#custom-mediaplayer.perc90-0 {
+    background-image: linear-gradient(to right, @color1 90%, gray 90.1%);
+}
+#custom-mediaplayer.perc91-0 {
+    background-image: linear-gradient(to right, @color1 91%, gray 91.1%);
+}
+#custom-mediaplayer.perc92-0 {
+    background-image: linear-gradient(to right, @color1 92%, gray 92.1%);
+}
+#custom-mediaplayer.perc93-0 {
+    background-image: linear-gradient(to right, @color1 93%, gray 93.1%);
+}
+#custom-mediaplayer.perc94-0 {
+    background-image: linear-gradient(to right, @color1 94%, gray 94.1%);
+}
+#custom-mediaplayer.perc95-0 {
+    background-image: linear-gradient(to right, @color1 95%, gray 95.1%);
+}
+#custom-mediaplayer.perc96-0 {
+    background-image: linear-gradient(to right, @color1 96%, gray 96.1%);
+}
+#custom-mediaplayer.perc97-0 {
+    background-image: linear-gradient(to right, @color1 97%, gray 97.1%);
+}
+#custom-mediaplayer.perc98-0 {
+    background-image: linear-gradient(to right, @color1 98%, gray 98.1%);
+}
+#custom-mediaplayer.perc99-0 {
+    background-image: linear-gradient(to right, @color1 99%, gray 99.1%);
+}
+#custom-mediaplayer.perc100-0 {
+    background-image: linear-gradient(to right, @color1 100%, gray 100.1%);
+}

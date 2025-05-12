@@ -2,7 +2,7 @@
 
 ## Installed apps
 
-# essentials
+### essentials
 
 - hyprland
 - waybar
@@ -18,3 +18,4 @@
 - meson
 - cpio
 - pkg-config
+- feh
