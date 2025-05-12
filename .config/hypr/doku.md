@@ -19,3 +19,4 @@
 - cpio
 - pkg-config
 - feh
+- cliphist
