@@ -3,6 +3,7 @@
 ```bash
 cd ~/.config/waybar/python
 python -m venv venv
+source venv/bin/activate
 ```
 
 ## 2. Install requirements for waybar-mediaplayer

@@ -1,7 +1,6 @@
 .git
 .gitignore
 ^/README.*
-scripts
 install.sh
 .config/nvim/lazy-lock.json
 sources/*
