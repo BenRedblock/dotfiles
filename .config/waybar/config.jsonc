@@ -2,12 +2,7 @@
   "layer": "top",
   "position": "top",
   "reload_style_on_change": true,
-  "modules-left": [
-    "custom/notification",
-    "clock",
-    "custom/pacman",
-    "wlr/taskbar",
-  ],
+  "modules-left": ["group/leftitems", "group/media"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "group/expand",
@@ -20,32 +15,31 @@
 
   "hyprland/workspaces": {
     "format": "{icon}",
-    "format-icons": {
-      "active": "",
-      "default": "",
-      "empty": "",
-    },
-    "persistent-workspaces": {
-      "*": [1, 2, 3, 4, 5],
-    },
+    // "format-icons": {
+    //   "active": "",
+    //   "default": "",
+    //   "empty": "",
+    // },
+    // "persistent-workspaces": {
+    //   "*": [1, 2, 3, 4, 5],
+    // },
   },
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 14,
-    "icon-theme": "Numix-Circle",
-    "tooltip-format": "{title}",
-    "on-click": "activate",
-    "on-click-middle": "close",
-    "ignore-list": ["Alacritty"],
-    "app_ids-mapping": {
-      "firefoxdeveloperedition": "firefox-developer-edition",
-    },
-    "rewrite": {
-      "Firefox Web Browser": "Firefox",
-      "Foot Server": "Terminal",
-    },
+  "image": {
+    "path": "/tmp/waybar-mediaplayer-art",
+    "size": 22,
+    "signal": 4,
+    "on-click": "feh --auto-zoom --borderless --title 'feh-float' /tmp/waybar-mediaplayer-art",
   },
-
+  "custom/mediaplayer": {
+    "exec": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer monitor",
+    "return-type": "json",
+    "format": "{}",
+    "on-click": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer play-pause",
+    "on-scroll-up": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer next",
+    "on-scroll-down": "$HOME/.config/waybar/waybar-mediaplayer/src/mediaplayer previous",
+    "min-length": 20,
+    "max-length": 20,
+  },
   "custom/notification": {
     "tooltip": false,
     "format": "",
@@ -143,20 +137,19 @@
     },
     "modules": [
       "custom/expand",
-      "custom/colorpicker",
       "cpu",
       "memory",
       "temperature",
       "custom/endpoint",
     ],
   },
-  "custom/colorpicker": {
-    "format": "{}",
-    "return-type": "json",
-    "interval": "once",
-    "exec": "~/.config/waybar/scripts/colorpicker.sh -j",
-    "on-click": "~/.config/waybar/scripts/colorpicker.sh",
-    "signal": 1,
+  "group/leftitems": {
+    "orientation": "horizontal",
+    "modules": ["custom/notification", "clock", "custom/pacman"],
+  },
+  "group/media": {
+    "orientation": "horizontal",
+    "modules": ["image", "custom/mediaplayer"],
   },
   "cpu": {
     "format": "{icon0}",
