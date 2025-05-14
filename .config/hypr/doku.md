@@ -20,3 +20,5 @@
 - pkg-config
 - feh
 - cliphist
+- gobject-introspection
+- sassc
