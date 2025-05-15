@@ -22,3 +22,4 @@
 - cliphist
 - gobject-introspection
 - sassc
+- hyprshot
