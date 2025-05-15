@@ -138,8 +138,12 @@
     "modules": [
       "custom/expand",
       "cpu",
+      "custom/endpoint",
       "memory",
+      "custom/endpoint",
       "temperature",
+      "custom/endpoint",
+      "backlight",
       "custom/endpoint",
     ],
   },
@@ -151,9 +155,14 @@
     "orientation": "horizontal",
     "modules": ["image", "custom/mediaplayer"],
   },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""],
+    "scroll-step": 5,
+  },
   "cpu": {
-    "format": "{icon0}",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "format": "{usage}% ",
     "tooltip": true,
   },
   "memory": {
@@ -161,7 +170,7 @@
   },
   "temperature": {
     "critical-threshold": 80,
-    "format": "",
+    "format": "{}°C ",
   },
   "tray": {
     "icon-size": 14,
