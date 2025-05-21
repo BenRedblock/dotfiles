@@ -23,3 +23,4 @@
 - gobject-introspection
 - sassc
 - hyprshot
+- brightnessctl
