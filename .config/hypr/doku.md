@@ -21,6 +21,6 @@
 - feh
 - cliphist
 - gobject-introspection
-- sassc
+- dart-sass
 - hyprshot
 - brightnessctl

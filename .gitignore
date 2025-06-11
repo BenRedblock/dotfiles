@@ -1,2 +1,3 @@
 .config/nvim/lazy-lock.json
 .config/waybar/python/venv
+.config/ags/style.css.map
